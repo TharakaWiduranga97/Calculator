@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic-Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4f613e5dc7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <div class="top">
+          <input type="number" id="inputEl" class="input" />
+        </div>
+        <div>
+          <span id="num1">0</span>
+          <span id="op">..</span>
+          <span id="num2">0</span>
+          <span>=</span>
+          <span id="ans">?</span>
+        </div>
+        <div class="bottom">
+          <button onclick="execute('+')">+</button>
+          <button onclick="execute('-')">-</button>
+          <button onclick="execute('*')">*</button>
+          <button onclick="execute('/')">/</button>
+          <button onclick="execute('%')">%</button>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
